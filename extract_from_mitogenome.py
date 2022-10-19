@@ -8,7 +8,7 @@ p = argparse.ArgumentParser()
 # Use example: ./extract_fasta.py -f file.fasta -r 1..600
 
 p.add_argument("-f", type=str, required=True, help="Input file in fasta format")
-p.add_argument("-r", type=str, required=True,help="integer number of the range of the seq to be extracted, GenBank format. e.g., 1..600")
+p.add_argument("-r", type=str, required=True,help="Range of the seq to be extracted, GenBank format. e.g., 1..600")
 
 args = p.parse_args()
 Fasta_file = args.f
